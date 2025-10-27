@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-	int i,num,sum;
+	int i,num,sum,p_num=0;
 	float avg;
 	printf("Enter number of elements : ");
 	scanf("%d",&num);
@@ -14,11 +14,15 @@ int main()
 	for (i=0;i<num;i++){
 	if (arr[i]>0){
 		sum+=arr[i];
+		p_num++;
 	}
+	else
+   printf("\nAll numbers are negative");
+   break;
 }
-	avg=sum/num;
+	avg=sum/p_num;
 	
-	printf("\nSum of elements = %d",sum);
-	printf("\nAverage = %.2f",avg);
+	printf("\nSum of positive numbers = %d",sum);
+	printf("\nAverage of positive numbers = %.2f",avg);
 	return 0;
 }
