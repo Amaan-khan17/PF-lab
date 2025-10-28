@@ -51,34 +51,16 @@ int main()
   		Symmetric=0;
   		break;
   	   }
-  	   if(Symmetric==0)
-  	   break;
   	}
 	  }
-	  if (Symmetric==1)
+	  if (Symmetric)
 	  printf("\nMatrix is symmetric...");
 	  else
 	  printf("\nMatrix is asymmetric...");
-// Checking if matrix is symmetric
-//int Symmetric = 1;
-//
-//for (i = 0; i < m; i++) {
-//    for (j = 0; j < n; j++) {
-//        if (S_Matrix[i][j] != S_Matrix[j][i]) {
-//            Symmetric = 0;
-//            break;
-//        }
-//    }
-//    if (Symmetric == 0)
-//        break;
-//}
-//
-//if (Symmetric == 1)
-//    printf("\nMatrix is symmetric...");
-//else
-//    printf("\nMatrix is asymmetric...");
+
  }
     else
     printf("\n\nInvalid matrix dimensions! Must be a square matrix.");
 	return 0;
+
 }
