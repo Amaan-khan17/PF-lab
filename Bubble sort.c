@@ -13,8 +13,14 @@ for (int i=0;i<len;i++){
 	scanf("%d",&arr[i]);
 }
 
-printf("\nSelect weather you want to arrange the array in Accending or Decending order\n1: Accending\n2: Decending\n");
+printf("\nSelect weather you want to arrange the array in Ascending or Descending order\n1: Ascending\n2: Descending\n\n");
 scanf("%d",&opt);
+
+printf("orignal array\n[");
+for (int i=0;i<len;i++){
+	printf(" %d ",arr[i]);
+}
+printf("]\n");
 
 switch(opt){
 
@@ -30,15 +36,12 @@ case 1:
    	 		arr[j+1]=temp;
 			}
 		}
+		printf("\n%d swap \n[",i+1);
+		for (int k=0;k<len;k++){
+			printf (" %d ",arr[k]);
+		}
+		printf("]\n");
    }
-    i=0;
-   printf("[ ");
-   while(i<len){
-   	printf("%d ",arr[i]);
-   i++;
-   }
-   
-   printf(" ]");
    break;
    
 case 2:
@@ -52,15 +55,12 @@ case 2:
    	 		arr[j+1]=temp;
 			}
 		}
+			printf("\n%d swap \n[",i+1);
+		for (int k=0;k<len;k++){
+			printf (" %d ",arr[k]);
+		}
+		printf("]\n");
    }
-   i=0;
-   printf("[ ");
-   while(i<len){
-   	printf("%d ",arr[i]);
-   i++;
-   }
-   
-   printf(" ]");
    break;
   
   default:
